@@ -48,7 +48,7 @@ body {
 /* ____________ */
 
 div {
-  border: 0.5px solid red;
+  /* border: 0.5px solid red; */
 }
 
 li {
@@ -166,3 +166,63 @@ input {
 }
 
 /* _____________________-- */
+
+/* mainscreen */
+
+.mainscreen {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 2rem 1.2fr 2rem 1fr;
+  gap: 15px;
+}
+
+.projects {
+  grid-area: 2/ 1 / 5/ 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  /* padding-left: 15px; */
+  /* padding-bottom: 15px; */
+}
+.mainscreen {
+  padding: 15px;
+}
+.projects,
+.projectTitle {
+  /* box-shadow: 17px 20px 40px rgba(0,0,0,.21) */
+  /* padding-left: 15px; */
+}
+
+.trending {
+  grid-area: 4/ 2 / -1 / 3;
+}
+
+.announcements {
+  grid-area: 2/ 2/ 3/ 3;
+}
+
+.card {
+  background-color: var(--navbar-color);
+  border-radius: 10px;
+  /* box-shadow: 17px 20px 40px rgba(0, 0, 0, 0.21); */
+  box-shadow: 8.5px 10px 10px rgba(0, 0, 0, 0.21);
+
+  border-left: 1rem solid var(--accent-color);
+  padding: 1rem;
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+  font-weight: var(--secondary-font-weight);
+  /* paddi */
+}
+
+.announcements,
+.trending {
+  border-radius: 10px;
+  box-shadow: 8.5px 10px 10px rgba(0, 0, 0, 0.21);
+  padding: 1rem;
+  background-color: var(--navbar-color);
+}
